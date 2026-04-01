@@ -32,3 +32,17 @@ git clone <new-repo-url>
 cd <new-repo-name>
 npm install
 npm run dev
+
+よく使う例
+Popupの中身をクロスフェード切替
+<CrossfadeSwitch activeKey={step}>
+  {step === "a" ? <StepA /> : <StepB />}
+</CrossfadeSwitch>
+
+
+CTAを700ms遅らせて表示
+<DelayedReveal show={open} delayMs={700}>
+  <button>次へ</button>
+</DelayedReveal>
+
+
