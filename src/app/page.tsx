@@ -49,9 +49,14 @@ export default function HomePage() {
       </PageContent>
 
       <div className="mt-8">
-        <Link href="/about" className="text-[1rem] underline">
-          Aboutへ
-        </Link>
+        <div className="flex gap-4">
+          <Link href="/about" className="text-[1rem] underline">
+            Aboutへ
+          </Link>
+          <Link href="/estimate-detailed" className="text-[1rem] underline">
+            見積デモへ
+          </Link>
+        </div>
       </div>
 
       <PopupShell open={open} onClose={() => setOpen(false)} title="Popup Motion Demo">
